@@ -1,37 +1,44 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  name: "Faith Wafula",
+  title: "AI & ML Developer | Ethical Systems Advocate",
+  description: "Portfolio website of Faith Wafula, an advocate for ethical AI systems and inclusive innovation.",
   accentColor: "#1d4ed8",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "faithwafula09@gmail.com",
+    linkedin: "https://www.linkedin.com/in/faith-b-wafula",
+    github: "https://github.com/FayCodes",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
-  projects: [
+    "I'm Faith Wafula, a machine learning developer who's deeply fascinated by the process of training models and uncovering insights from data. I believe in solving problems by asking the right questions and embracing continuous learning, rather than simply prescribing answers.",
+  skills: {
+  languages: ["Python", "JavaScript"],
+  frameworksAndLibraries: ["React", "Node.js", "Scikit-learn", "pandas", "matplotlib"],
+  toolsAndPlatforms: ["AWS", "Docker", "AI Fairness 360"],
+  coreCompetencies: [
+    "Fairness auditing and ethical evaluation",
+    "ML model training and debugging",
+    "Data visualization and storytelling",
+    "Collaborative development and adaptability",
+    "Transparent and reliable system design"
+  ]
+},
+  Projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Carbon Emission Forecasting",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Predicted carbon emissions using regression, emphasizing accuracy and transparency in climate data modeling",
+      skills: ["Python", "Scikit-learn", "pandas", "matplotlib"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "AI Chatbot with Twilio (WhatsApp)",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Built an AI-powered WhatsApp chatbot using Twilio API, enabling real-time conversational responses via natural language understanding.",
+      skills: ["Python", "Twilio", "Flask", "Natural Language Processing"],
     },
     {
-      name: "ExtensionKit",
+      name: "NER and Sentiment Analysis of Amazon Product Reviews",
       description:
         "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
       skills: ["React", "Node.js", "AWS"],
     },
   ],
