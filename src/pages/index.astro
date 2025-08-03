@@ -9,8 +9,13 @@ import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
 
-// 🚨 Temporary log to catch runtime structure
-console.log("Logging siteConfig.skills:", siteConfig.skills);
+// ✅ Safely flatten all skills into one array
+const skillsList = [
+  ...siteConfig.skills.languages,
+  ...siteConfig.skills.frameworksAndLibraries,
+  ...siteConfig.skills.toolsAndPlatforms,
+  ...siteConfig.skills.coreCompetencies
+];
 ---
 
 <Header />
@@ -26,12 +31,7 @@ console.log("Logging siteConfig.skills:", siteConfig.skills);
 <section>
   <h2>Skills</h2>
   <ul>
-    {[
-      ...siteConfig.skills.languages,
-      ...siteConfig.skills.frameworksAndLibraries,
-      ...siteConfig.skills.toolsAndPlatforms,
-      ...siteConfig.skills.coreCompetencies
-    ].map(skill => (
+    {skillsList.map(skill => (
       <li>{skill}</li>
     ))}
   </ul>
