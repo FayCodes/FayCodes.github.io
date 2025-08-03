@@ -22,7 +22,7 @@ export const siteConfig = {
     "Transparent and reliable system design"
   ]
 },
-  Projects: [
+  projects: [
     {
       name: "Carbon Emission Forecasting",
       description:
