@@ -9,6 +9,19 @@ import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
 ---
+<section>
+  <h2>Skills</h2>
+  <ul>
+    {[
+      ...siteConfig.skills.languages,
+      ...siteConfig.skills.frameworksAndLibraries,
+      ...siteConfig.skills.toolsAndPlatforms,
+      ...siteConfig.skills.coreCompetencies
+    ].map(skill => (
+      <li>{skill}</li>
+    ))}
+  </ul>
+</section>
 
 <html lang="en">
   <head>
