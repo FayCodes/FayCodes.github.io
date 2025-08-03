@@ -9,12 +9,12 @@ import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
 
-// ✅ Safely flatten all skills into one array
+// ✅ Safely flatten and verify all skill sections
 const skillsList = [
-  ...siteConfig.skills.languages,
-  ...siteConfig.skills.frameworksAndLibraries,
-  ...siteConfig.skills.toolsAndPlatforms,
-  ...siteConfig.skills.coreCompetencies
+  ...(Array.isArray(siteConfig.skills?.languages) ? siteConfig.skills.languages : []),
+  ...(Array.isArray(siteConfig.skills?.frameworksAndLibraries) ? siteConfig.skills.frameworksAndLibraries : []),
+  ...(Array.isArray(siteConfig.skills?.toolsAndPlatforms) ? siteConfig.skills.toolsAndPlatforms : []),
+  ...(Array.isArray(siteConfig.skills?.coreCompetencies) ? siteConfig.skills.coreCompetencies : [])
 ];
 ---
 
@@ -31,9 +31,9 @@ const skillsList = [
 <section>
   <h2>Skills</h2>
   <ul>
-    {skillsList.map(skill => (
-      <li>{skill}</li>
-    ))}
+    {skillsList.length > 0
+      ? skillsList.map(skill => <li>{skill}</li>)
+      : <li>No skills available at the moment.</li>}
   </ul>
 </section>
 
