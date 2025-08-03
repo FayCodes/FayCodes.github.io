@@ -1,187 +1,109 @@
-<img width="1943" height="1093" alt="image" src="https://github.com/user-attachments/assets/cc2ff955-17c2-48c7-81c8-479a0f061850" />
+# Faith Wafula – DevPortfolio
 
-# DevPortfolio Template
+Welcome to my personal portfolio site, built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/)! This project showcases my journey from analytical chemistry to machine learning development, with a strong focus on ethical AI and fair system design. It’s a space to explore my work, values, and vision for a more transparent and inclusive future in tech.
 
-A modern, minimalist portfolio template built with Astro and Tailwind CSS. Perfect for developers looking to showcase their skills, experience, and projects in a clean, professional way.
+---
 
-This was completely rebuilt from the ground up from V1. This template was built to be entirely ready to go with a quick config edit (see below) but also provides the ability to easily extend in whatever way you want.
+## ✨ About the Template
 
-This template also comes with `CLAUDE.md` and `.cursor/rules` files for easy integration with your existing AI workflows.
+This site is based on the **DevPortfolio Template** originally created by [Ryan Fitzgerald](https://x.com/rfitzio). It’s been tailored to reflect my experiences, projects, and beliefs — and rebuilt from the ground up to support easy configuration and personal branding.
 
-> **📬 Connect & Share!**  
-> For questions and updates, feel free to reach out on [**X (Twitter)**](https://x.com/rfitzio).  
-> If you've built and published your personal site with this template, I'd love to see it! Send me a DM 🚀
+You can find the original template [here](https://ryanfitzgerald.github.io/devportfolio/).
 
-## Preview
+---
 
-To view a live preview of the site, [click here](https://ryanfitzgerald.github.io/devportfolio/).
+## 💼 What’s Included
 
-## Built With
+- 🌐 Custom configuration for personal info, projects, skills, education, and work history via `src/config.ts`
+- 🎨 Personalized styling with accent color and clean layout using Tailwind CSS
+- 🧠 Embedded AI tools integration with `CLAUDE.md` and `.cursor/rules` (experimental)
+- ⚡ Ready-to-deploy setup optimized for GitHub Pages
 
-- **[Astro](https://astro.build/)** - Static site generator for modern web apps
-- **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Tabler Icons](https://tabler.io/icons)** - Free and open source icons
-- **TypeScript** - For type-safe configuration
+---
 
-## Updating the Template
+## 🛠️ Tech Stack
 
-### Configuration
+- **Astro** – Static site builder for modern web experiences  
+- **Tailwind CSS v4** – Utility-first CSS for rapid styling  
+- **TypeScript** – Type-safe configuration & logic  
+- **Tabler Icons** – Beautiful and customizable SVG icons
 
-The template is designed to be easily customizable through the `src/config.ts` file. This single file controls:
+---
 
-- **Personal Information**: Name, title, description
-- **Accent Color**: Primary color theme (changing this will change the accent color site wide)
-- **Social Links**: Email, LinkedIn, Twitter, GitHub (all optional)
-- **About Section**: Personal bio/description
-- **Skills**: List of technical skills
-- **Projects**: Project showcase with descriptions and links
-- **Experience**: Work history with bullet points
-- **Education**: Educational background and achievements
+## ⚙️ Configuration Guide
 
-If skills, projects, experience, or education are removed from the config, those sections will be hidden entirely.
+All site content is managed through a single file: [`src/config.ts`](src/config.ts). Here’s a breakdown of what you can edit:
 
-### Example structures
+- **Personal Info:** name, job title, short description, theme color  
+- **Social Links:** email, GitHub, LinkedIn, Twitter  
+- **About Me:** your bio and passion areas  
+- **Skills:** technical proficiencies  
+- **Projects:** showcase with name, description, tech used, and links  
+- **Experience:** company, title, date range, and achievements  
+- **Education:** academic background and notable recognitions  
 
-Here's what the config data structure looks like for each section:
+Sections will be hidden if their data is removed from config.
 
-#### Basic Information
-```typescript
-name: "Your Name",
-title: "Your Job Title",
-description: "Brief site description",
-accentColor: "#1d4ed8", // Hex color for theme
-```
+---
 
-#### Social Links (all optional)
-```typescript
-social: {
-  email: "your-email@example.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  twitter: "https://twitter.com/yourprofile", 
-  github: "https://github.com/yourusername",
-}
-```
+## 🚀 Projects Featured
 
-#### About Section
-```typescript
-aboutMe: "A paragraph describing yourself, your background, interests, and what you're passionate about. This appears in the About section of your portfolio."
-```
+A few highlights from my portfolio:
+- **Carbon Emissions Forecasting** – ML model predicting industrial emissions
+- **AI Chatbot with Twilio** – Dialogflow-powered chatbot supporting Kenyan SMEs
+- **NER + Sentiment Analysis** – NLP insights on Amazon reviews using BERT
+- **Fairness Auditing Framework** – Ethical toolset for evaluating bias in ML systems
 
-#### Skills
-```typescript
-skills: ["JavaScript", "React", "Node.js", "Python", "AWS", "Docker"]
-```
+---
 
-#### Projects
-```typescript
-projects: [
-  {
-    name: "Project Name",
-    description: "Brief description of what the project does and its impact",
-    link: "https://github.com/yourusername/project",
-    skills: ["React", "Node.js", "AWS"], // Technologies used
-  }
-]
-```
+## 📚 Education
 
-#### Experience
-```typescript
-experience: [
-  {
-    company: "Company Name",
-    title: "Your Job Title",
-    dateRange: "Jan 2022 - Present",
-    bullets: [
-      "Led development of microservices architecture serving 1M+ users",
-      "Reduced API response times by 40% through optimization",
-      "Mentored team of 5 junior developers",
-    ],
-  }
-]
-```
+I’ve transitioned from a foundation in analytical chemistry to the frontier of responsible machine learning:
 
-#### Education
-```typescript
-education: [
-  {
-    school: "University Name",
-    degree: "Bachelor of Science in Computer Science",
-    dateRange: "2014 - 2018",
-    achievements: [
-      "Graduated Magna Cum Laude with 3.8 GPA",
-      "Dean's List all semesters",
-      "President of Computer Science Club"
-    ]
-  }
-]
-```
+- 🎓 **University of Nairobi** – BSc in Analytical Chemistry  
+- 🧠 **Power Learn Project Africa** – AI & ML specialization  
+- 🧪 **Microsoft Azure / Udacity** – Applied AI workloads, generative tech with AWS
 
-### Icons
+---
 
-The template uses [Tabler Icons](https://tabler.io/icons) for all icons. If you wish to add more icons and have it look consistent with what's already there, you can browse through their extensive icon library.
+## 💌 Connect
 
-## Project Structure
+Let’s make technology more fair and inclusive — together. You can reach me at:
 
-```
-devportfolio/
-├── public/
-│   └── favicon.svg          # Site favicon
-├── src/
-│   ├── components/          # Astro components
-│   │   ├── About.astro      # About section
-│   │   ├── Education.astro  # Education section
-│   │   ├── Experience.astro # Work experience section
-│   │   ├── Footer.astro     # Site footer
-│   │   ├── Header.astro     # Navigation header
-│   │   ├── Hero.astro       # Hero/intro section
-│   │   └── Projects.astro   # Projects showcase
-│   ├── pages/
-│   │   └── index.astro      # Main page layout
-│   ├── styles/
-│   │   └── global.css       # Global styles
-│   └── config.ts            # Site configuration
-├── astro.config.mjs         # Astro configuration
-├── package.json             # Project dependencies
-├── tailwind.config.js       # Tailwind configuration
-└── tsconfig.json            # TypeScript configuration
-```
+- 📧 **Email:** wafulafaith99@gmail.com  
+- 💼 [LinkedIn](https://linkedin.com/in/faith-b-wafula)  
+- 🧠 [GitHub](https://github.com/FayCodes)  
+- 🌍 [Portfolio](https://faycodes.github.io)
 
-## Local Development
+---
 
-If you'd like to run it locally:
+## 🧪 Local Setup
 
-```
-git clone https://github.com/RyanFitzgerald/devportfolio.git
+To run the portfolio locally:
+
+```bash
+git clone https://github.com/FayCodes/devportfolio.git
 cd devportfolio
+
+🚢 Deployment
+Deploy easily to any of these platforms:
+
+GitHub Pages
+
+Netlify
+
+Vercel
+
+Cloudflare Pages
+
+Render
+
+More deployment guides available here.
+
+📄 License
+MIT – use freely and kindly! Template by Ryan Fitzgerald. Custom modifications and content by Faith Wafula.
+
+
+Ready to paste into your repo — and make it truly yours. Let me know if you'd like to add badges, analytics, or a contributor section next!
 npm install
-```
-
-After that, start up the Astro dev server with:
-
-```
 npm run dev
-```
-
-## Deployment
-
-The template can be deployed to any static hosting service easily (and in most cases, completely free). Here are some options:
-
-- To deploy with Netlify, [click here](https://docs.astro.build/en/guides/deploy/netlify/).
-- To deploy with Vercel, [click here](https://docs.astro.build/en/guides/deploy/vercel/).
-- To deploy with GitHub Pages, [click here](https://docs.astro.build/en/guides/deploy/github/).
-- To deploy with Cloudflare Pages, [click here](https://docs.astro.build/en/guides/deploy/cloudflare/).
-- To deploy with Render, [click here](https://docs.astro.build/en/guides/deploy/render/).
-
-Want to deploy somewhere else? Find more guides [here](https://docs.astro.build/en/guides/deploy/).
-
-## Changelog
-
-To view the changelog, see CHANGELOG.md.
-
-## License
-
-This project is fully and completely MIT. See LICENSE.md.
-
-## Questions?
-
-Feel free to reach out on [X (Twitter)](https://x.com/rfitzio) if you have any questions or need help.
