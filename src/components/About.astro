@@ -27,15 +27,16 @@ const skillsList = [
         </p>
 
         <div class="pt-4">
-          <div class="flex flex-wrap gap-3">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4 text-gray-900">Skills</h3>
             {
               skillsList.length > 0
-                ? skillsList.map(skill => (
-                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-100 text-gray-800 rounded-full text-sm sm:text-base md:text-lg font-medium hover:bg-gray-200 transition-colors duration-200">
-                      {skill}
-                    </span>
-                  ))
-                : <span class="text-gray-500 italic">No skills available</span>
+                ? <ul class="list-disc pl-6 space-y-2 text-gray-800 text-base sm:text-lg">
+                    {skillsList.map(skill => (
+                      <li>{skill}</li>
+                    ))}
+                  </ul>
+                : <p class="text-gray-500 italic">No skills available</p>
             }
           </div>
         </div>
