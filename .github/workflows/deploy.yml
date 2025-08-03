@@ -13,4 +13,4 @@ jobs:
         with:
           path: .
           node-version: 20
-          deploy: true
+
